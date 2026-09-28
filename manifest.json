@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GPT Degrade Checker",
+  "version": "1.0.0",
+  "description": "ChatGPT Web 降智检测",
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["src/page-signals.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["src/model-classifier.js", "src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
