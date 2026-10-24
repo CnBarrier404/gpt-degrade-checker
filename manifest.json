@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "GPT Degrade Checker",
+  "name": "ChatGPT Web Helper",
   "version": "1.0.0",
-  "description": "ChatGPT Web 降智检测",
+  "description": "ChatGPT 网页端助手",
   "content_scripts": [
     {
       "matches": ["https://chatgpt.com/*"],
